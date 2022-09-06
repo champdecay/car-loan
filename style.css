@@ -3,6 +3,9 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -36,14 +39,7 @@ li {
     text-align: center;
 }
 
-.banner ul {
-    display: flex;
-    max-width: 991px;
-    margin: 0 auto;
-}
-
 .banner ul>li {
-    flex: 25%;
     position: relative;
     text-align: left;
     padding: 0 30px;
@@ -67,13 +63,28 @@ li {
     max-width: 700px;
     width: 100%;
     margin: 0 auto;
-    height: 400px;
     background-color: #cbddd2;
     box-shadow: 1px 1px 5px #000;
 }
 
 .lead-form button {
     font-size: 28px;
+}
+
+.noUi-marker {
+    display: none;
+}
+
+.noUi-pips .noUi-value {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.noUi-pips.noUi-pips-horizontal {
+    padding: 0;
+    height: 30px;
+    top: 10px;
 }
 
 h2 {
@@ -114,29 +125,74 @@ footer {
     color: #e2e2e2;
 }
 
-.footer-group {
-    display: flex;
-}
-
-.footer-group>div {
-    flex: 25%;
-}
-
-.footer-box {
-    padding: 30px 0;
-}
-
-.footer-box h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer-box li {
-    line-height: 24px;
+.footer-group ul {
+    padding: 0;
+    margin: 0;
     font-size: 14px;
 }
 
-.footer-box p {
-    line-height: 24px;
-    font-size: 14px;
+.footer-group ul li {
+    line-height: 22px;
+}
+
+.footer-group a {
+    text-decoration: none;
+}
+
+.lead-form {
+    padding: 40px;
+}
+
+.lead-form h3 {
+    padding: 0 0 30px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner h1 {
+        font-size: 32px;
+        padding: 50px;
+    }
+
+    .features h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .banner h1 {
+        font-size: 28px;
+        padding: 50px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .lead-form button {
+        font-size: 20px;
+    }
+
+    .lead-form h3 {
+        padding: 0 0 20px;
+        font-size: 24px;
+    }
+
+    .lead-form {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .lead-form button {
+        font-size: 16px;
+    }
+
+    .lead-form h3 {
+        padding: 0 0 15px;
+        font-size: 20px;
+    }
 }
