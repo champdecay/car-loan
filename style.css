@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --primary: #1f6378;
+    --highlight: #f00;
+}
+
+li {
+    list-style-type: none;
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+.navbar {
+    box-shadow: 0 0 5px #aaa;
+}
+
+
+.banner {
+    background: url(assets/home.png) no-repeat top center;
+    background-size: contain;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 50px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.banner ul {
+    display: flex;
+    max-width: 991px;
+    margin: 0 auto;
+}
+
+.banner ul>li {
+    flex: 25%;
+    position: relative;
+    text-align: left;
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.banner ul>li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(assets/bullet.png);
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.lead-form {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    background-color: #cbddd2;
+    box-shadow: 1px 1px 5px #000;
+}
+
+.lead-form button {
+    font-size: 28px;
+}
+
+h2 {
+    padding: 50px 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+}
+
+
+.features .logo {
+    border: 3px solid #f00;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 25px;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--primary);
+    color: #e2e2e2;
+    padding: 15px 0;
+    line-height: 18px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.footer {
+    background-color: #34493d;
+    color: #e2e2e2;
+}
+
+.footer a {
+    color: #e2e2e2;
+}
+
+.footer-group {
+    display: flex;
+}
+
+.footer-group>div {
+    flex: 25%;
+}
+
+.footer-box {
+    padding: 30px 0;
+}
+
+.footer-box h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-box li {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.footer-box p {
+    line-height: 24px;
+    font-size: 14px;
+}
