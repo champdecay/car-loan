@@ -87,6 +87,14 @@ li {
     top: 10px;
 }
 
+.noUi-tooltip {
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    bottom: 25px !important;
+    border: none;
+}
+
 h2 {
     padding: 50px 0;
     font-size: 42px;
